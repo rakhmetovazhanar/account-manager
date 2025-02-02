@@ -1,0 +1,81 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 10px auto;
+    text-align: center;
+  }
+    /*фамилия и имя в одну строку*/
+  .name{
+    
+      display: inline;
+      margin-right: 2px; 
+  
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+
+  .btn2{
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: rgb(0, 110, 220);
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.btn{
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: rgb(158, 4, 4);
+  color: white;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+a {
+  text-decoration: none;
+  color: white;
+
+}
+
+.account {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: rgb(0, 110, 220);
+    color: white;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+  /*pagination*/
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border-radius: 5px;
+  }
+  
+  /* текущая страница*/
+  .pagination a.active {
+    background-color: rgb(0, 110, 220);
+    color: white;
+  }
+  
+  /* остальные страницы  */
+  .pagination a:hover:not(.active) {background-color: #ddd;}
