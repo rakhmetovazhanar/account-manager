@@ -1,1 +1,1 @@
-add/edit/delete/list functionalities using php, mysql
+add/edit/delete/list/pagination functionalities using php, mysql
