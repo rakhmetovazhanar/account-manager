@@ -25,7 +25,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $new_account->setPhone3($_POST['phone3']);
 
     $new_account->insertData();
-    //header("Location: list.php"); 
     echo "Аккаунт удачно создан";
 }
 ?>

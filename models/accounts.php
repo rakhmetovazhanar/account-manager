@@ -93,7 +93,7 @@ class Accounts {
         $this->phone3=$phone3;
     }
 
-    //create new account
+    //добавление нового аккаунта
     public function insertData() {
         try {
             $stm = $this->pdo->prepare("INSERT INTO accounts (first_name, last_name, email, company, position, phone1, phone2, phone3) VALUES(?,?,?,?,?,?,?,?)");
@@ -103,7 +103,7 @@ class Accounts {
             echo $e->getMessage();
         }
     }
-    //number of all pages
+    //общее число страниц
     public function numOfPages() {
         try {
             $limit = 10;
@@ -138,7 +138,7 @@ class Accounts {
      }
     }
 
-
+    //данные одного аккаунта
     public function fetchOneAcc() {
         try {
             $stm = $this->pdo->prepare("SELECT * FROM accounts where id=?");
@@ -149,7 +149,7 @@ class Accounts {
         }
     }
 
-    //update account
+    //изменение аккаунта
     public function updateData() {
         try {
             $stm = $this->pdo->prepare("UPDATE accounts SET first_name=?, last_name=?, email=?, company=?, position=?, phone1=?, phone2=?, phone3=? 
@@ -160,7 +160,7 @@ class Accounts {
         }
     }
 
-    //delete account
+    //удаление аккаунта
     public function deleteData() {
         try {
             $stm = $this->pdo->prepare("DELETE FROM accounts WHERE id=?");

@@ -20,12 +20,12 @@ $totalPages = $data->numOfPages();
 </head>
 <body>
 <p><a class="account" href="index.php">Создать аккаунт</a></p>
+    <!-- вывод данных аккаунтов -->
 <?php
 foreach($data_list as $key => $value) { 
 ?>
 
     <div class="card">
-
         <p class="name" name="first_name">ФИО: <?=$value['first_name']?></p>   
         <p class="name" name="last_name"><?=$value['last_name']?></p> 
         <p class="email" name="email">Электронная почта: <?=$value['email']?></p> 
@@ -40,7 +40,7 @@ foreach($data_list as $key => $value) {
 <?php
 }
 ?>
-
+    <!-- alert после удаление и редактирования аккаунта -->
 <?php
 if (isset($_GET['deleted']) && $_GET['deleted'] == 'true') {
     echo "<script>alert('Аккаунт успешно удален');</script>";
@@ -52,7 +52,7 @@ if (isset($_GET['updated']) && $_GET['updated'] == 'true') {
 
 ?>
 
-
+    <!-- pagination -->
 <div class="pages">Страница 1 от <?php echo $totalPages ?></div>
 <div class="pagination">
     <!-- начало начинается с первой стр -->

@@ -1,7 +1,5 @@
 <?php
   
-//print_r(PDO::getAvailableDrivers());
-
 include_once('db.php');
 
 class DBConnection {
